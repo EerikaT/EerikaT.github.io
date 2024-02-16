@@ -4,3 +4,32 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     margin: 40px 20px;
 }
+h1 {
+    color: #5b6d55 ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px ;
+}
+#aloituskuva {
+    width: 100%;
+    max-width: max-content;
+}
+p {
+    color: #403c01 ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px ;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #403c01 ;
+    text-align: center;
+    margin: 0px;
+    p {color: #f2f2f2 ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    }
+}
