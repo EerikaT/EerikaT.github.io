@@ -4,25 +4,63 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     margin: 40px 20px;
 }
+
 h1 {
     color: #5b6d55 ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px ;
 }
+
+nav a{
+    background: #403c01;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f2f2f2;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #403c01;
+
+
+}
+nav a:hover{
+    color: #5b6d55;
+    background-color: #f2f2f2;
+}
+tähän valittu juttuun haluaisin sellaisen jossa näkyy millä sivulla ollaam milloinkin...
+#valittu{
+    color: #f2f2f2;
+    background-color: #5b6d55;
+
+}
+
 #aloituskuva {
     width: 100%;
     max-width: max-content;
 }
+
 p {
     color: #403c01 ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px ;
 }
+figure {
+    border: 15px #403c01 solid;
+    color: #f2f2f2;
+    padding: 2px;
+    margin: auto;
+    text-align: center;
 
+}
+figcaption {
+    background-color: #5b6d55;
+    font-style: italic;
 
+}
 
+header{
+    background-image:;
+    background: ;
 
-
+}
 
 
 footer {
