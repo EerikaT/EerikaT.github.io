@@ -6,11 +6,19 @@ body {
 }
 
 h1 {
-    color: #5b6d55 ;
+    color:#5b6d55;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px ;
 }
 
+h2 {
+    color:#f2f2f2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px ;
+}
+
+
+/*päävalikko*/
 nav a{
     background: #403c01;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -18,56 +26,97 @@ nav a{
     text-decoration: none;
     display: inline-block;
     border: 2px solid #403c01;
-
+    font-size: 18px ;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10 px;
 
 }
 nav a:hover{
     color: #5b6d55;
     background-color: #f2f2f2;
 }
-tähän valittu juttuun haluaisin sellaisen jossa näkyy millä sivulla ollaam milloinkin...
+
+.toimintakehote {
+    border: 2px solid #5b6d55;
+    border-radius: 15px;
+    background-color: #D9CF48;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+.toimintakehote:hover{
+    background-color: #f2f2f2;
+    color: #403c01;
+}
+
+
 #valittu{
     color: #f2f2f2;
     background-color: #5b6d55;
 
 }
-
+/*kuvan määritykset*/
 #aloituskuva {
     width: 100%;
-    max-width: max-content;
+    max-width: 200px;
 }
-
+/*leima kuvan määritykset*/
+#leima {
+    width: 100%;
+    max-width: 200px;
+}
 p {
     color: #403c01 ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px ;
 }
+
+/*kaikkien kuvien määritykset*/
 figure {
-    border: 15px #403c01 solid;
+    border: 10px #403c01 solid;
     color: #f2f2f2;
-    padding: 2px;
+    padding: 10px;
     margin: auto;
-    text-align: center;
+    border-radius: 30px;
 
 }
 figcaption {
     background-color: #5b6d55;
+    color: #f2f2f2;
     font-style: italic;
+    padding: 2px;
+    text-align: center;
 
 }
 
 header{
-    background-image:;
-    background: ;
+    background-image:url(Kuvat/aloituskuva.jpg);
+    background-size:cover;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 
+.grip-container{ 
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; /* Kaki saraketta, muuta miten haluat */
+
+}
 
 footer {
     background-color: #403c01 ;
     text-align: center;
     margin: 0px;
     p {color: #f2f2f2 ;
+        font-size: 18px;
         font-family: Verdana, Geneva, Tahoma, sans-serif ;
     }
 }
