@@ -20,6 +20,7 @@ h2 {
 
 /*päävalikko*/
 nav a{
+    align-content: center;
     background: #403c01;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #f2f2f2;
@@ -61,11 +62,6 @@ nav a:hover{
     background-color: #5b6d55;
 
 }
-/*kuvan määritykset*/
-#aloituskuva {
-    width: 100%;
-    max-width: 200px;
-}
 /*leima kuvan määritykset*/
 #leima {
     width: 100%;
@@ -103,14 +99,25 @@ header{
     padding-bottom: 100px;
 
 }
-
+/*index.html sivun asettelua*/
 .grip-container{ 
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr; /* Kaki saraketta, muuta miten haluat */
 
 }
+/*peltikatonmaalaus.html sivun asettelua*/
+.container{ 
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; /* Kaki saraketta, muuta miten haluat */
 
+}
+/*peltikatonmaalaus.html sivun kuvien asettelua*/
+#esimerkkikuvat{
+    width: 100%;
+    max-width: 500px;
+}
 footer {
     background-color: #403c01 ;
     text-align: center;
