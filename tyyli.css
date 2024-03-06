@@ -1,44 +1,76 @@
+/*Yleiset määritykset body elementille*/
 body {
-    color: #403c01 ;
-    background-color: #f2f2f2 ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    color: #403c01;
+    background-color: #f2f2f2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 40px 20px;
 }
 
+/*otsikkotyypin määritykset*/
 h1 {
-    color:#5b6d55;
+    color: #403c01;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px ;
+    font-size: 24px;
 }
 
+/*otsikkotyypin määritykset*/
 h2 {
-    color:#f2f2f2;
+    color: #403c01;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px ;
+    font-size: 24px;
 }
 
+/*kappaleiden yleiset määritykset*/
+p {
+    color: #403c01;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
 
-/*päävalikko*/
-nav a{
+/* Linkki teksteissä, jossa ei ole aiemmin käyty */
+.linkki:link {
+    color: #403c01;
+}
+
+/* Linkki teksteissä, joissa on aiemmin käyty */
+.linkki:visited {
+    color: #5b6d55;
+}
+
+/* Linkki teksteissä, kun hiiri on sen päällä */
+.linkki:hover {
+    color: #D9CF48;
+}
+
+/*päävalikon määritykset*/
+nav a {
     align-content: center;
-    background: #403c01;
+    background: #5b6d55;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #f2f2f2;
     text-decoration: none;
     display: inline-block;
     border: 2px solid #403c01;
-    font-size: 18px ;
+    font-size: 18px;
     border-radius: 15px;
     padding: 10px;
-    margin-right: 10px;
-    margin-bottom: 10 px;
-
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
-nav a:hover{
+
+/*päävalikossa painikkeen värin muutos hiiren alla*/
+nav a:hover {
     color: #5b6d55;
     background-color: #f2f2f2;
 }
 
+/*päävalikossa vaihtuu väri sen mukaan millä sivulla ollaan*/
+#valittu {
+    color: #f2f2f2;
+    background-color: #5b6d55;
+}
+
+/*ota yhteyttä painike*/
 .toimintakehote {
     border: 2px solid #5b6d55;
     border-radius: 15px;
@@ -51,79 +83,101 @@ nav a:hover{
     cursor: pointer;
     color: #f2f2f2;
 }
-.toimintakehote:hover{
+
+/*ota yhteyttä painikkeen värin muutos hiiren alla*/
+.toimintakehote:hover {
     background-color: #f2f2f2;
     color: #403c01;
 }
 
-
-#valittu{
+/*reunojen määritykset halutuille kuville*/
+figure {
+    border: 8px #5b6d55 solid;
     color: #f2f2f2;
-    background-color: #5b6d55;
+    margin: auto;
+    border-radius: 0px;
 
 }
+
+/*kuvatekstien määritykset halutuille kuville*/
+figcaption {
+    background-color: #5b6d55;
+    color: #f2f2f2;
+    padding: 6px;
+    text-align: center;
+    margin-top: -4px;
+
+}
+
+/*index.html sivun yläreuna */
+header {
+    background-image: url(Kuvat/aloituskuva.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    h1 {
+        color: #f2f2f2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+    }
+}
+
+/*index.html sivun elementtien asettelua*/
+.grip-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    /* Kaki saraketta, muuta miten haluat */
+}
+
+/*logo kuvan määritykset*/
+#logo {
+    width: 100%;
+    max-width: 350px;
+}
+
 /*leima kuvan määritykset*/
 #leima {
     width: 100%;
     max-width: 200px;
 }
-p {
-    color: #403c01 ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px ;
-}
 
-/*kaikkien kuvien määritykset*/
-figure {
-    border: 10px #403c01 solid;
-    color: #f2f2f2;
-    padding: 10px;
-    margin: auto;
-    border-radius: 30px;
-
-}
-figcaption {
-    background-color: #5b6d55;
-    color: #f2f2f2;
-    font-style: italic;
-    padding: 2px;
-    text-align: center;
-
-}
-
-header{
-    background-image:url(Kuvat/aloituskuva.jpg);
-    background-size:cover;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-}
-/*index.html sivun asettelua*/
-.grip-container{ 
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr; /* Kaki saraketta, muuta miten haluat */
-
-}
-/*peltikatonmaalaus.html sivun asettelua*/
-.container{ 
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr; /* Kaki saraketta, muuta miten haluat */
-
-}
 /*peltikatonmaalaus.html sivun kuvien asettelua*/
-#esimerkkikuvat{
+#esimerkkikuvat {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
 }
+
+/*peltikatonmaalaus.html sivun elementtien asettelua*/
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    /* Kaki saraketta, muuta miten haluat */
+    column-gap: 10px;
+    /*sarakkeiden väli*/
+    row-gap: 20px;
+    /*rivien välit sarakkeiden sisällä*/
+}
+
+/*tähän määritykset yhteydenottolomakkeen ulkonäölle*/
+form {}
+
+/*alatunniste*/
 footer {
-    background-color: #403c01 ;
+    background-color: #5b6d55;
     text-align: center;
     margin: 0px;
-    p {color: #f2f2f2 ;
+
+    p {
+        color: #f2f2f2;
         font-size: 18px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .sahkoposti {
+        color: #f2f2f2
     }
 }
