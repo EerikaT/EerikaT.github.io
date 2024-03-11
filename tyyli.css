@@ -1,30 +1,144 @@
-/*Yleiset määritykset body elementille*/
+/*tietokoneen ruudulle*/
+@media only screen and (min-width: 1025px) {
+    #etusivu {
+        background-image: url(Kuvat/aloituskuva1.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+    }
+
+    body {
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        align-content: center;
+        background: #5b6d55;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #f2f2f2;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #403c01;
+        font-size: 18px;
+        border-radius: 15px;
+        padding: 10px 50px;
+        margin: 5px 10px;
+    }
+
+}
+
+/*tablettikoko*/
+@media only screen and (min-width: 521px) and (max-width: 1024px) {
+    #etusivu {
+        background-image: url(Kuvat/aloituskuva1.jpg);
+        background-size: cover;
+        width: 100%;
+    }
+
+    body {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        align-content: center;
+        background: #5b6d55;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #f2f2f2;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #403c01;
+        font-size: 18px;
+        border-radius: 15px;
+        padding: 10px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/*puhelinkoko*/
+@media only screen and (max-width: 520px) {
+    #etusivu {
+        background-image: url(Kuvat/aloituskuva1.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+    }
+
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        align-content: center;
+        background: #5b6d55;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #f2f2f2;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #403c01;
+        font-size: 16px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+}
+/*päävalikon määritykset
+nav a {
+    align-content: center;
+    background: #5b6d55;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f2f2f2;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #403c01;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}*/
+
+/*Yleiset määritykset body elementin sisällölle*/
 body {
     color: #403c01;
     background-color: #f2f2f2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 40px 20px;
+
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        color: #403c01;
+        font-size: 28px;
+    }
+
+    h2 {
+        color: #403c01;
+        font-size: 24px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
 }
 
-/*otsikkotyypin määritykset*/
-h1 {
-    color: #403c01;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-}
 
-/*otsikkotyypin määritykset*/
-h2 {
-    color: #403c01;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-}
 
-/*kappaleiden yleiset määritykset*/
-p {
-    color: #403c01;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+/*määritettyjen sisältöjen keskitys*/
+.keskitys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Linkki teksteissä, jossa ei ole aiemmin käyty */
@@ -42,21 +156,6 @@ p {
     color: #D9CF48;
 }
 
-/*päävalikon määritykset*/
-nav a {
-    align-content: center;
-    background: #5b6d55;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f2f2f2;
-    text-decoration: none;
-    display: inline-block;
-    border: 2px solid #403c01;
-    font-size: 18px;
-    border-radius: 15px;
-    padding: 10px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-}
 
 /*päävalikossa painikkeen värin muutos hiiren alla*/
 nav a:hover {
@@ -66,22 +165,23 @@ nav a:hover {
 
 /*päävalikossa vaihtuu väri sen mukaan millä sivulla ollaan*/
 #valittu {
-    color: #f2f2f2;
-    background-color: #5b6d55;
+    color: #5b6d55;
+    background-color: #f2f2f2;
 }
 
 /*ota yhteyttä painike*/
 .toimintakehote {
     border: 2px solid #5b6d55;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #D9CF48;
-    padding: 16px 32px;
+    padding: 20px 100px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
     color: #f2f2f2;
+    font-size: 22px;
 }
 
 /*ota yhteyttä painikkeen värin muutos hiiren alla*/
@@ -124,31 +224,19 @@ header {
     }
 }
 
-/*index.html sivun elementtien asettelua*/
-.grip-container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    /* Kaki saraketta, muuta miten haluat */
+/*listojen määrityksiä*/
+ul {
+    font-size: 18px;
 }
 
 /*logo kuvan määritykset*/
 #logo {
     width: 100%;
     max-width: 350px;
+    margin: auto;
+    
 }
 
-/*leima kuvan määritykset*/
-#leima {
-    width: 100%;
-    max-width: 200px;
-}
-
-/*peltikatonmaalaus.html sivun kuvien asettelua*/
-#esimerkkikuvat {
-    width: 100%;
-    max-width: 600px;
-}
 
 /*peltikatonmaalaus.html sivun elementtien asettelua*/
 .container {
@@ -162,8 +250,61 @@ header {
     /*rivien välit sarakkeiden sisällä*/
 }
 
-/*tähän määritykset yhteydenottolomakkeen ulkonäölle*/
-form {}
+/*peltikatonmaalaus.html sivun kuvien asettelua*/
+#esimerkkikuvat {
+    width: 100%;
+    max-width: 600px;
+}
+
+/*yhteydenotto.html lomakkeen määrityksiä*/
+form {
+    width: 60%;
+    /* Määrittele lomakkeen leveys prosentteina tai pikseleinä */
+    padding: 20px;
+    /* Lisää sisennystä lomakkeen ympärille */
+
+
+    label {
+        font-weight: bold;
+        /* Lisää lihavointia kentän nimelle */
+    }
+}
+
+/*yhteydenotto.html lomakkeen tekstikenttien määrityksiä*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #5b6d55;
+    resize: vertical;
+}
+
+/*yhteydenotto.html sivun lomakeen napin määrityksiä*/
+input[type="submit"] {
+    background-color: #D9CF48;
+    color: #f2f2f2;
+    padding: 15px 30px;
+    border: 2px solid #5b6d55;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f2f2f2;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #f2f2f2;
+    color: #403c01;
+    border: 2px solid #5b6d55;
+}
+
+
+
+
 
 /*alatunniste*/
 footer {

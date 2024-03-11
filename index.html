@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords"
 		content="peltikaton maalaus uusimaa, katon maalaus, kattomaalaus, konesaumapeltikaton maalaus, konesaumapeltikatto, maalaus, uusimaa ">
-
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
 	<!--CSS tyylitiedosto-->
 	<link rel="stylesheet" href="tyyli.css">
 </head>
@@ -15,34 +16,37 @@
 
 
 <body>
-	<!--yrityksen nimi-->
-	<img id="logo" src="Kuvat/logotumma.png"
-		alt="Kuvassa on vain tekstiä jossa lukee seuraavasti: Maalaus-Tervo Oy Maalaustyöt 3 vuoden ja 300 % takuulla">
+	<!--yrityksen nimi ja painamalla pääsee etusivulle-->
+	<div class="keskitys">
+		<a href="index.html">
+			<img id="logo" src="Kuvat/logo.jpg"
+				alt="Kuvassa on tekstinä yrityksen nimi: Maalaus-Tervo sen vieressä pieni leima jossa lukee keskellä: 3 vuoden ja 300 % takuu sekä reunoilla: hintatakuu, yhteydenpitotakuu ja dokumentointitakuu.">
+		</a>
+	</div>
 	<!--Tässä on navigaatio; etusivu, peltikaton maalaus ja yhteydenotto-->
-	<nav>
-		<a href="index.html" id="valittu"><b>Etusivu</b></a>
-		<a href="peltikatonmaalaus.html"><b>Peltikatonmaalaus</b></a>
-		<a href="yhteydenotto.html"><b>Yhteydenotto</b></a>
-	</nav>
+	<div class="keskitys">
+		<nav>
+			<a href="index.html" id="valittu"><b>Etusivu</b></a>
+			<a href="peltikatonmaalaus.html"><b>Peltikatonmaalaus</b></a>
+			<a href="yhteydenotto.html"><b>Yhteydenotto</b></a>
+		</nav>
+	</div>
 
-	<header>
+	<header id="etusivu">
 		<h1>Peltikaton maalausta Uudellemaalla perinteisellä sivellinmenetelmällä</h1>
 	</header>
 
-	<div class="grip-container">
-		<div>
-			<p>Onko vanha peltikatto ruosteessa? </p>
-			<p>Hilseileekö maali? </p>
-			<p>Uusi katto vuosien hapettama, mutta vailla maalipintaa? </p>
-			<p>Ei hätää, me hoidamme homman. </p>
-		</div>
-		<div>
-			<img id="leima" src="Kuvat/leima musta.png"
-				alt="Leima jossa lukee keskellä: 3 vuoden ja 300 % takuu sekä reunoilla: hintatakuu, yhteydenpitotakuu ja dokumentointitakuu.">
-		</div>
+	<div class="keskitys">
+		<p>Onko vanha peltikatto ruosteessa? <br>
+			Hilseileekö maali? <br>
+			Uusi katto vuosien hapettama, mutta vailla maalipintaa? <br>
+			Ei hätää, me hoidamme homman. 
+		</p>
 	</div>
 	<!--navigaatiokehoite-->
-	<a href="yhteydenotto.html" class="toimintakehote"><b>Ota yhteyttä!</b></a>
+	<div class="keskitys">
+		<a href="yhteydenotto.html" class="toimintakehote"><b>Ota yhteyttä!</b></a>
+	</div>
 	<h2>3 vuoden ja 300 % takuu</h2>
 
 	<p><b>Eihän sellainen ole mahdollista?</b></p>

@@ -5,55 +5,66 @@
 	<title>Peltikaton maalausta Uudellemaalla perinteisellä sivellinmenetelmällä</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<meta name="keywords"
+		content="peltikaton maalaus uusimaa, katon maalaus, kattomaalaus, konesaumapeltikaton maalaus, konesaumapeltikatto, maalaus, uusimaa ">
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
 	<!--CSS tyylitiedosto-->
 	<link rel="stylesheet" href="tyyli.css">
-
 </head>
 
 <body>
-	<!--yrityksen nimi-->
-	<img id="logo" src="Kuvat/logotumma.png"
-		alt="Kuvassa on vain tekstiä jossa lukee seuraavasti: Maalaus-Tervo Oy Maalaustyöt 3 vuoden ja 300 % takuulla">
-	<!--Tässä on navigointipainikkeet etusivu, peltikaton maalaus ja yhteydenotto-->
-	<nav>
-		<a href="index.html" id="valittu"><b>Etusivu</b></a>
-		<a href="peltikatonmaalaus.html"><b>Peltikatonmaalaus</b></a>
-		<a href="yhteydenotto.html"><b>Yhteydenotto</b></a>
-	</nav>
+	<!--yrityksen nimi ja painamalla pääsee etusivulle-->
+	<div class="keskitys">
+		<a href="index.html">
+			<img id="logo" src="Kuvat/tummalogo.jpg"
+				alt="Kuvassa on vain tekstiä jossa lukee seuraavasti: Maalaus-Tervo Oy Maalaustyöt 3 vuoden ja 300 % takuulla">
+		</a>
+	</div>
+	<!--Tässä on navigaatio; etusivu, peltikaton maalaus ja yhteydenotto-->
+	<div class="keskitys">
+		<nav>
+			<a href="index.html" id="valittu"><b>Etusivu</b></a>
+			<a href="peltikatonmaalaus.html"><b>Peltikatonmaalaus</b></a>
+			<a href="yhteydenotto.html"><b>Yhteydenotto</b></a>
+		</nav>
+	</div>
 
 	<h1>Perinteinen peltikattomaalaus on taitolaji!</h1>
 	<p>Hyvin huollettu peltikatto kestää aikaa. Vanhimmat maalaamamme katot on tehty 1920- luvulla. Maalaamme uusia
 		konesaumakattoja sekä huoltomaalaamme vanhoja peltikattoja.
 	</p>
-	<p>Arvostatko käsityötä ja perinteisiä työmenetelmiä?<br>
-		Niin mekin: tästä syystä maalaamme peltikatot vain ja ainoastaan <b>sivellinmaalauksena</b>.
+	<p>Olemme maalanneet peltikattoja vuodesta 2008. Asiakkaamme ovat pitäneet sekä tavastamme tehdä työtä että
+		lopputuloksesta.
+	</p>
+	<p>Toteutamme mm. seuraavanlaisia maalaustöitä: </p>
+	<ul>
+		<li>Pienkerrostalon peltikaton maalaus</li>
+		<li>Rivitalon peltikaton maalaus</li>
+		<li>Omakotitalon peltikaton maalaus.</li>
+	</ul>
+	<!--navigaatiokehoite yhteydenottoon-->
+	<div class="keskitys">
+		<a href="yhteydenotto.html" class="toimintakehote"><b>Ota yhteyttä!</b></a>
+	</div>
+
+	<h2>Arvostatko käsityötä ja perinteisiä työmenetelmiä?</h2>
+	<p>Niin mekin: tästä syystä maalaamme peltikatot vain ja ainoastaan <b>sivellinmaalauksena</b>.
 		Noudatamme peltikaton maalaustyössä Museoviraston laatimaa <a
 			href="https://www.museovirasto.fi/uploads/Arkisto-ja-kokoelmapalvelut/Julkaisut/korjauskortti-7.pdf"
 			class="linkki" title="Linkki pdf tiedostoon joissa Museoviraston korjauskortti"
 			target="_blank">korjauskorttia</a>.
 	</p>
-	<p>Olemme maalanneet peltikattoja vuodesta 2008. Asiakkaamme ovat pitäneet sekä tavastamme tehdä työtä että
-		lopputuloksesta.
-	</p>
-	<p>Toteutamme mm. seuraavanlaisia maalaustöitä: <br>
-		Pienkerrostalon peltikaton maalaus <br>
-		Rivitalon peltikaton maalaus<br>
-		Omakotitalon peltikaton maalaus.<br>
-	</p>
 	<p>Käytämme pääasiassa kotimaista Eskaro RK Peltikattomaalia (ent. Vihdin Maalitehdas).
 		Lue lisää valmistajan <a
 			href="https://eskaro.fi/suomen-vanhin-vesiohenteinen-peltikattomaali-eskaro-rk-peltikattomaali-40-vuotta/"
-			title="Linkki eskaron sivuille, joissa lisää tietoa maalista" target="_blank">kotisivuilta</a>.
+			class="linkki" title="Linkki eskaron sivuille, joissa lisää tietoa maalista"
+			target="_blank">kotisivuilta</a>.
 
-	</p>
-	<p>Lisätöistä sovitaan aina etukäteen kirjallisesti (esim. sähköpostitse tai urakkasopimuksen liite): laskun
-		saadessasi tiedät etukäteen laskun loppusumman.
-		Mitään yllätyskuluja ei sinulle tule.
 	</p>
 
 	<!--tässä muutama ennen ja jälkeen kuva-->
-	<div class="container">
+	<section class="container">
 		<div>
 			<figure>
 				<img id="esimerkkikuvat" src="Kuvat/ennenmaalausta1.jpg" alt="kuvassa o">
@@ -78,22 +89,26 @@
 				<figcaption>Peltikatton maalauksen jälkeen</figcaption>
 			</figure>
 		</div>
-	</div>
-
-	<p><!--navigaatiokehoite yhteydenottoon-->
-		<a href="yhteydenotto.html" class="toimintakehote"><b>Ota yhteyttä!</b></a> niin talosi katto tulee kuntoon.
-		<br>
+	</section>
+	<br>
+	<h2>Kuinka paljon peltikaton maalaus maksaa?</h2>
+	<p>
 		Konesaumapeltikaton maalaus hinta n. 20-30 €/m2 sis. alv 24 %. <br>
 		Tyypillisen omakotitalon katon maalaus maksaa noin 3000-5500 €. <br>
+		Lisätöistä sovitaan aina etukäteen kirjallisesti (esim. sähköpostitse tai urakkasopimuksen liite): laskun
+		saadessasi tiedät etukäteen laskun loppusumman.
+		<b>Mitään yllätyskuluja ei sinulle tule.</b>
+	</p>
+	<p>
 		Teemme kattomaalauksia Uudenmaan alueella ja pääkaupunkiseudulla (Espoo, Helsinki, Vantaa, Kauniainen,
 		Kirkkonummi, Tuusula, Järvenpää, Karkkila, Sipoo, Porvoo, Hyvinkää, Kerava, Pornainen, Mäntsälä, Loviisa,
 		Lapinjärvi, Askola, Myrskylä, Pukkila, Nurmijärvi, Vihti, Lohja, Siuntio, Karjaa, Raasepori, Hanko).
 	</p>
-	<p>
-
-
-	</p>
-
+	<!--navigaatiokehoite yhteydenottoon-->
+	<div class="keskitys">
+		<a href="yhteydenotto.html" class="toimintakehote"><b>Ota yhteyttä!</b></a>
+	</div>
+	<br>
 	<!--Näitä päivitetään aktiivisesti uusien kohteiden myötä-->
 	<h3>Tulevia ja toteutuneita kohteita:</h3>
 	<h4>Vuonna 2024 toteutettavia kohteita:</h4>
