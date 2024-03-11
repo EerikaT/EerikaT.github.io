@@ -8,7 +8,8 @@
         text-align: center;
         padding-top: 10px;
         padding-bottom: 100px;
-        h1{
+
+        h1 {
             color: #f2f2f2;
             font-size: 30px;
         }
@@ -47,7 +48,8 @@
         text-align: center;
         padding-top: 75px;
         padding-bottom: 75px;
-        h1{
+
+        h1 {
             color: #f2f2f2;
             font-size: 25px;
         }
@@ -79,6 +81,13 @@
 
 /*puhelinkoko*/
 @media only screen and (max-width: 600px) {
+
+    /*logo kuvan määritykset*/
+    #logo {
+        width: 100%;
+        max-width: 300px;
+    }
+
     /*index.html sivun yläreuna */
     #etusivu {
         background-image: url(Kuvat/aloituskuva.jpg);
@@ -88,11 +97,11 @@
         padding-bottom: 50px;
         width: 100%;
 
-        h1{
+        h1 {
             color: #f2f2f2;
             font-size: 20px;
         }
-        
+
     }
 
 
@@ -102,20 +111,21 @@
         margin-top: 10px;
     }
 
+    /*navigaatioelementin määrityksiä*/
+    nav {
+        text-align: center;
+    }
     nav a {
-        align-content: center;
         background: #5b6d55;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: #f2f2f2;
         text-decoration: none;
         display: inline-block;
         border: 2px solid #403c01;
-        font-size: 16px;
+        font-size: 15px;
         border-radius: 10px;
-        padding: 10px;
-        margin-right: 0px;
-        margin-bottom: 15px;
-        
+        padding: 10px 5px;
+        margin-bottom: 10px;
+
     }
 
 }
@@ -244,13 +254,6 @@ ul {
     font-size: 18px;
 }
 
-/*logo kuvan määritykset*/
-#logo {
-    width: 100%;
-    max-width: 350px;
-    margin: auto;
-
-}
 
 
 /*peltikatonmaalaus.html sivun elementtien asettelua*/
