@@ -5,6 +5,7 @@
     #logo {
         width: 100%;
         max-width: 350px;
+        height: 100%;
     }
 
     body {
@@ -42,6 +43,10 @@
         font-size: 22px;
     }
 
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
 
 }
 
@@ -52,6 +57,7 @@
     #logo {
         width: 100%;
         max-width: 350px;
+        height: 100%;
     }
 
     body {
@@ -90,6 +96,10 @@
         font-size: 20px;
     }
 
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
 
 }
 
@@ -100,6 +110,7 @@
     #logo {
         width: 100%;
         max-width: 300px;
+        height: 100%;
     }
 
     body {
@@ -141,189 +152,191 @@
         font-size: 18px;
     }
 
-
+    /*peltikatonmaalaus.html sivun elementtien asettelua*/
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
 
+    /*Yleiset määritykset body elementin sisällölle*/
+    body {
+        color: #403c01;
+        background-color: #f2f2f2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-/*Yleiset määritykset body elementin sisällölle*/
-body {
-    color: #403c01;
-    background-color: #f2f2f2;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+        p {
+            font-size: 18px;
+        }
 
-    p {
+        h1 {
+            color: #403c01;
+            font-size: 24px;
+        }
+
+        h2 {
+            color: #403c01;
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+
+
+    /*määritettyjen sisältöjen keskitys*/
+    .keskitys {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Linkki teksteissä, jossa ei ole aiemmin käyty */
+    .linkki:link {
+        color: #403c01;
+    }
+
+    /* Linkki teksteissä, joissa on aiemmin käyty */
+    .linkki:visited {
+        color: #5b6d55;
+    }
+
+    /* Linkki teksteissä, kun hiiri on sen päällä */
+    .linkki:hover {
+        color: #D9CF48;
+    }
+
+
+    /*päävalikossa painikkeen värin muutos hiiren alla*/
+    nav a:hover {
+        color: #5b6d55;
+        background-color: #f2f2f2;
+    }
+
+    /*päävalikossa vaihtuu väri sen mukaan millä sivulla ollaan*/
+    #valittu {
+        color: #5b6d55;
+        background-color: #f2f2f2;
+    }
+
+
+    /*ota yhteyttä painikkeen värin muutos hiiren alla*/
+    .toimintakehote:hover {
+        background-color: #f2f2f2;
+        color: #403c01;
+    }
+
+    /*reunojen määritykset halutuille kuville*/
+    figure {
+        border: 8px #5b6d55 solid;
+        color: #f2f2f2;
+        margin: auto;
+        border-radius: 0px;
+
+    }
+
+    /*kuvatekstien määritykset halutuille kuville*/
+    figcaption {
+        background-color: #5b6d55;
+        color: #f2f2f2;
+        padding: 6px;
+        text-align: center;
+        margin-top: -4px;
+
+    }
+
+    /*listojen määrityksiä*/
+    ul {
         font-size: 18px;
     }
 
-    h1 {
-        color: #403c01;
-        font-size: 24px;
+    /*index.html sivulla oleva kuva*/
+    #aloituskuva {
+        width: 100%;
+        max-width: 1400px;
+        height: 100%;
     }
 
-    h2 {
-        color: #403c01;
-        font-size: 24px;
+
+    /*peltikatonmaalaus.html sivun elementtien asettelua*/
+    .container {
+        display: grid;
+        align-items: center;
+        column-gap: 10px;
+        /*sarakkeiden väli*/
+        row-gap: 20px;
+        /*rivien välit sarakkeiden sisällä*/
     }
 
-    h3 {
-        font-size: 24px;
+    /*peltikatonmaalaus.html sivun kuvien asettelua*/
+    #esimerkkikuvat {
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
     }
-}
+
+    /*yhteydenotto.html lomakkeen määrityksiä*/
+    form {
+        width: 60%;
+        /* Määrittele lomakkeen leveys prosentteina tai pikseleinä */
+        padding: 20px;
+        /* Lisää sisennystä lomakkeen ympärille */
 
 
+        label {
+            font-weight: bold;
+            /* Lisää lihavointia kentän nimelle */
+        }
+    }
 
-/*määritettyjen sisältöjen keskitys*/
-.keskitys {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    /*yhteydenotto.html lomakkeen tekstikenttien määrityksiä*/
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 2px solid #5b6d55;
+        resize: vertical;
+    }
 
-/* Linkki teksteissä, jossa ei ole aiemmin käyty */
-.linkki:link {
-    color: #403c01;
-}
-
-/* Linkki teksteissä, joissa on aiemmin käyty */
-.linkki:visited {
-    color: #5b6d55;
-}
-
-/* Linkki teksteissä, kun hiiri on sen päällä */
-.linkki:hover {
-    color: #D9CF48;
-}
-
-
-/*päävalikossa painikkeen värin muutos hiiren alla*/
-nav a:hover {
-    color: #5b6d55;
-    background-color: #f2f2f2;
-}
-
-/*päävalikossa vaihtuu väri sen mukaan millä sivulla ollaan*/
-#valittu {
-    color: #5b6d55;
-    background-color: #f2f2f2;
-}
-
-
-/*ota yhteyttä painikkeen värin muutos hiiren alla*/
-.toimintakehote:hover {
-    background-color: #f2f2f2;
-    color: #403c01;
-}
-
-/*reunojen määritykset halutuille kuville*/
-figure {
-    border: 8px #5b6d55 solid;
-    color: #f2f2f2;
-    margin: auto;
-    border-radius: 0px;
-
-}
-
-/*kuvatekstien määritykset halutuille kuville*/
-figcaption {
-    background-color: #5b6d55;
-    color: #f2f2f2;
-    padding: 6px;
-    text-align: center;
-    margin-top: -4px;
-
-}
-
-/*listojen määrityksiä*/
-ul {
-    font-size: 18px;
-}
-
-/*index.html sivulla oleva kuva*/
-#aloituskuva {
-    width: 100%;
-    max-width: 1400px;
-}
-
-
-/*peltikatonmaalaus.html sivun elementtien asettelua*/
-.container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    /* Kaki saraketta, muuta miten haluat */
-    column-gap: 10px;
-    /*sarakkeiden väli*/
-    row-gap: 20px;
-    /*rivien välit sarakkeiden sisällä*/
-}
-
-/*peltikatonmaalaus.html sivun kuvien asettelua*/
-#esimerkkikuvat {
-    width: 100%;
-    max-width: 600px;
-}
-
-/*yhteydenotto.html lomakkeen määrityksiä*/
-form {
-    width: 60%;
-    /* Määrittele lomakkeen leveys prosentteina tai pikseleinä */
-    padding: 20px;
-    /* Lisää sisennystä lomakkeen ympärille */
-
-
-    label {
+    /*yhteydenotto.html sivun lomakeen napin määrityksiä*/
+    input[type="submit"] {
+        background-color: #D9CF48;
+        color: #f2f2f2;
+        padding: 15px 30px;
+        border: 2px solid #5b6d55;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #f2f2f2;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
-        /* Lisää lihavointia kentän nimelle */
     }
-}
 
-/*yhteydenotto.html lomakkeen tekstikenttien määrityksiä*/
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 2px solid #5b6d55;
-    resize: vertical;
-}
-
-/*yhteydenotto.html sivun lomakeen napin määrityksiä*/
-input[type="submit"] {
-    background-color: #D9CF48;
-    color: #f2f2f2;
-    padding: 15px 30px;
-    border: 2px solid #5b6d55;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #f2f2f2;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
-
-input[type="submit"]:hover {
-    background-color: #f2f2f2;
-    color: #403c01;
-    border: 2px solid #5b6d55;
-}
-
-
-
-
-
-/*alatunniste*/
-footer {
-    background-color: #5b6d55;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    margin: 0px;
-    color: #f2f2f2;
-
-    .sahkoposti {
-        color: #f2f2f2
+    input[type="submit"]:hover {
+        background-color: #f2f2f2;
+        color: #403c01;
+        border: 2px solid #5b6d55;
     }
-}
+
+
+
+
+
+    /*alatunniste*/
+    footer {
+        background-color: #5b6d55;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+        color: #f2f2f2;
+
+        .sahkoposti {
+            color: #f2f2f2
+        }
+    }
