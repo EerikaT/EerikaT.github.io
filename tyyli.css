@@ -80,14 +80,14 @@
         border: 2px solid #5b6d55;
         border-radius: 10px;
         background-color: #D9CF48;
-        padding: 20px 100px;
+        padding: 20px 70px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         margin: 4px 2px;
         cursor: pointer;
         color: #f2f2f2;
-        font-size: 22px;
+        font-size: 20px;
     }
 
 
@@ -131,7 +131,7 @@
         border: 2px solid #5b6d55;
         border-radius: 10px;
         background-color: #D9CF48;
-        padding: 20px 40px;
+        padding: 15px 50px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -143,22 +143,6 @@
 
 
 }
-
-/*päävalikon määritykset
-nav a {
-    align-content: center;
-    background: #5b6d55;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f2f2f2;
-    text-decoration: none;
-    display: inline-block;
-    border: 2px solid #403c01;
-    font-size: 18px;
-    border-radius: 10px;
-    padding: 10px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-}*/
 
 
 /*Yleiset määritykset body elementin sisällölle*/
@@ -258,7 +242,7 @@ ul {
 /*index.html sivulla oleva kuva*/
 #aloituskuva {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 
