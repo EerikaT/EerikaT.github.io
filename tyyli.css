@@ -306,8 +306,21 @@ input[type="submit"]:hover {
 }
 
 
+/*Yhteydenotto lomakkeella olevien linkkien määritykset:*/
+/* Linkki, jossa ei ole aiemmin käyty */
+.yhteydenotto:link {
+    color: #403c01;
+}
 
+/* Linkki, joissa on aiemmin käyty */
+.yhteydenotto:visited {
+    color: #5b6d55;
+}
 
+/* Linkki, kun hiiri on sen päällä */
+.yhteydenotto:hover {
+    color: #D9CF48;
+}
 
 /*alatunniste*/
 footer {
@@ -321,6 +334,6 @@ footer {
 
 }
 
-.sahkoposti {
+.alatunniste {
     color: #f2f2f2
 }
